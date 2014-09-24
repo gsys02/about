@@ -9,7 +9,7 @@ hs_err_pid*
 *~
 
 # eclipse
-*.settings
+*.settings/
 *.project
 *.classpath
 *.cache
@@ -18,7 +18,7 @@ hs_err_pid*
 */.gitignore
 
 # gradle
-*.gradle
-*build
-*bin
+*.gradle/
+*build/
+*bin/
 
