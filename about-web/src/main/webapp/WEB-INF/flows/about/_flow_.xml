@@ -6,6 +6,6 @@
 		http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd
 	">
 
-	<view-state id="user" />
+	<view-state id="about" />
 
 </flow>
