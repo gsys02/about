@@ -9,13 +9,12 @@
     ">
 
 	<beans:bean id="cert" class="sys02.web.util.Cert" />
-	
+
 	<http use-expressions="true" pattern="/**" entry-point-ref="casEntryPoint">
 
 		<custom-filter after="CAS_FILTER" ref="clientFilter" />
 
 		<intercept-url pattern="/web/about" access="isAuthenticated()" />
-
 	</http>
 
 	<authentication-manager alias="authenticationManager">
@@ -28,8 +27,7 @@
 	</beans:bean>
 
 	<beans:bean id="clients" class="org.pac4j.core.client.Clients">
-		<beans:property name="callbackUrl"
-			value="${cas.callbackurl}" />
+		<beans:property name="callbackUrl" value="${cas.callbackurl}" />
 		<beans:property name="clients">
 			<beans:list>
 				<beans:ref bean="casClient" />

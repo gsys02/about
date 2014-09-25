@@ -7,5 +7,10 @@
 	">
 
 	<view-state id="about" />
+	
+
+	<global-transitions>
+		<transition on="sso" to="about" />
+	</global-transitions>
 
 </flow>
