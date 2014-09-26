@@ -9,6 +9,7 @@
 <h:head>
 
 
+
 	<!-- Core and extension CSS files -->
 	<link rel="stylesheet" media="screen"
 		href="${request.contextPath}/web/public/lib/deckjs/core/deck.core.css" />
@@ -37,8 +38,7 @@
 	<script
 		src="${request.contextPath}/web/public/lib/deckjs/modernizr.custom.js"></script>
 
-	<script
-		src="${request.contextPath}/web/public/lib/deckjs/jquery.min.js"></script>
+	<!-- 	<script src="${request.contextPath}/web/public/lib/deckjs/jquery.min.js"></script> -->
 
 	<!-- Deck Core and extensions -->
 	<script
@@ -65,12 +65,23 @@
 </h:head>
 
 <body>
-	<h:form>
-		<p:stack icon="${request.contextPath}/web/public/img/stack.png">
-			<p:menuitem value="SSO"
-				icon="${request.contextPath}/web/public/img/layer.png" action="sso" />
-		</p:stack>
-	</h:form>
+
+	<div
+		style="width: 98%; text-align: right; padding-top: 10px; position: absolute; z-index: 10">
+		<h:form>
+			<p:commandButton id="dynaButton" value="Presentaciones" type="button"
+				icon="ui-icon-image" />
+			<p:menu overlay="true" trigger="dynaButton" my="left top"
+				at="left bottom">
+				<p:menuitem icon="ui-icon-document" value="Acerca" action="about" />
+				<p:menuitem icon="ui-icon-document" value="SSO" action="sso" />
+				<p:menuitem icon="ui-icon-document" value="Gradle" action="gradle" />
+				<p:menuitem icon="ui-icon-document" value="Jenkis" action="jenkis" />
+				<p:menuitem icon="ui-icon-document" value="Git" action="git" />
+			</p:menu>
+		</h:form>
+	</div>
+
 	<ui:insert name="deckjs" />
 
 </body>
