@@ -15,210 +15,41 @@
 
 		<section class="slide">
 			<h2>Introducción</h2>
-			<p>Se desea acceder a múltiples aplicaciones web con una sola
-				autenticación; a su vez serán administradas por un Dashboard que
-				simulara una sola web para el usuario final.</p>
+			<p>
+				El proyecto se encuentra versionado con git en el repositorio <strong><a
+					href="http://www.sonarqube.org">url</a></strong>
+			</p>
 		</section>
 
 		<section class="slide">
 			<h2>Requerimientos:</h2>
 			<ol>
 				<li>
-					<h3>Java</h3>
-					<p>Sera el lenguaje core del sistema</p>
+					<h3>Cliente git</h3>
+					<p>Se puede usar eclipse, netbeans o desde terminal</p>
 				</li>
 				<li>
-					<h3>Spring</h3>
-					<p>Framework de nuestra plataforma web</p>
+					<h3>Usuario</h3>
+					<p>usr: gosharp</p>
+					<p>pass: cSur/git</p>
 				</li>
 				<li>
-					<h3>CAS</h3>
-					<p>Protocolo para usar SSO</p>
-				</li>
-				<li>
-					<h3>Servidor web</h3>
-					<p>Podemos elegir entre tomcat,glassfish,wildfly, etc.</p>
+					<h3>Repositorio de los proyectos</h3>
+					<ul>
+						<li>repo 1</li>
+						<li>repo 1</li>
+						<li>repo 1</li>
+						<li>repo 1</li>
+
+					</ul>
 				</li>
 			</ol>
 		</section>
 
 		<section class="slide">
-			<h2>Diseño global SSO</h2>
-			<img src="${request.contextPath}/web/public/img/sso.png" />
-			<p></p>
+			<h2>Compilar el proyecto:</h2>
 		</section>
 
 
-
-
-
-		<section class="slide" id="markup">
-			<h2>The Markup</h2>
-			<p>
-				Slides are just HTML elements with a class of
-				<code>slide</code>
-				.
-			</p>
-			<pre>
-				<code>&lt;section class=&quot;slide&quot;&gt;
-  &lt;h2&gt;How to Make a Deck&lt;/h2&gt;
-  &lt;ol&gt;
-    &lt;li&gt;
-      &lt;h3&gt;Write Slides&lt;/h3&gt;
-      &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;h3&gt;Choose Themes&lt;/h3&gt;
-      &lt;p&gt;One for slide styles and one for deck transitions.&lt;/p&gt;
-    &lt;/li&gt;
-    
-  &lt;/ol&gt;
-&lt;/section&gt;</code>
-			</pre>
-		</section>
-
-		<section class="slide" id="themes">
-			<h2>Style Themes</h2>
-			<p>Customizes the colors, typography, and layout of slidecontent.</p>
-			<pre>
-				<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/style-theme.css&quot;&gt;</code>
-			</pre>
-			<h2>Transition Themes</h2>
-			<p>
-				Defines transitions between slides using CSS3 transitions. Less
-				capable browsers fall back to cutaways. But <strong>you</strong>
-				arent using <em>those</em> browsers to give your presentations,
-				areyou
-			</p>
-			<pre>
-				<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/transition-theme.css&quot;&gt;</code>
-			</pre>
-		</section>
-
-		<section class="slide" id="extensions">
-			<h2>Extensions</h2>
-			<p>Core gives you basic slide functionality with left and right
-				arrow navigation, but you may want more. Here are the ones included
-				in thisdeck:</p>
-
-			<ul>
-				<li class="slide" id="extensions-goto"><strong>deck.goto</strong>:
-					Adds a shortcut key to jump to any slide number. Hit g, type in the
-					slide number, and hitenter.</li>
-
-				<li class="slide" id="extensions-menu"><strong>deck.menu</strong>:
-					Adds a menu view, letting you see all slides in a grid. Hit m to
-					toggle to menu view, continue navigating your deck, and hit m to
-					return to normal view. Touch devices can double-tap the deck to
-					switch betweenviews.</li>
-
-				<li class="slide" id="extensions-navigation"><strong>deck.navigation</strong>:
-					Adds clickable left and right buttons for the less
-					keyboardinclined.</li>
-
-				<li class="slide" id="extensions-status"><strong>deck.status</strong>:
-					Adds a page number indicator. (current/total)</li>
-
-				<li class="slide" id="extensions-scale"><strong>deck.scale</strong>:
-					Scales each slide to fit within the deck container using CSS
-					Transforms for those browsers that support them.</li>
-			</ul>
-
-			<p class="slide" id="extension-folders">
-				Each extension folder in the download package contains the necessary
-				JavaScript, CSS, and HTMLfiles. For a complete list of extension
-				modules included in deck.js, check out the<a
-					href="http://imakewebthings.github.com/deck.js/docs">documentation</a>.
-			</p>
-		</section>
-
-		<section class="slide" id="nested">
-			<h2>Nested Slides</h2>
-			<p>That last slide had a few steps. To create substeps in slides,
-				just nest them:</p>
-			<pre>
-				<code>&lt;section class=&quot;slide&quot;&gt;
-  &lt;h2&gt;Extensions&lt;/h2&gt;
-  &lt;p&gt;Core gives you basic slide functionality...&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li class=&quot;slide&quot;&gt;
-      &lt;h3&gt;deck.goto&lt;/h3&gt;
-      &lt;p&gt;Adds a shortcut key to jump to any slide number...&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-    &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-    &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</code>
-			</pre>
-		</section>
-
-		<section class="slide" id="elements-images">
-			<h2>Other Elements: Images</h2>
-			<img src="http://placekitten.com/600/375" alt="Kitties"></img>
-			<pre>
-				<code>&lt;img src=&quot;http://placekitten.com/600/375&quot; alt=&quot;Kitties&quot;&gt;</code>
-			</pre>
-		</section>
-
-		<section class="slide" id="elements-blockquotes">
-			<h2>Other Elements: Blockquotes</h2>
-			<blockquote cite="http://example.org">
-				<p>Food is an important part of a balanced diet.</p>
-				<p>
-					<cite>Fran Lebowitz</cite>
-				</p>
-			</blockquote>
-			<pre>
-				<code>&lt;blockquote cite=&quot;http://example.org&quot;&gt;
-  &lt;p&gt;Food is an important part of a balanced diet.&lt;/p&gt;
-  &lt;p&gt;&lt;cite&gt;Fran Lebowitz&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</code>
-			</pre>
-		</section>
-
-
-		<section class="slide" id="elements-videos">
-			<h2>Other Elements: Video Embeds</h2>
-			<p>Embed videos from your favorite online video service or with
-				an HTML5 videoelement.</p>
-
-			<iframe
-				src="http://player.vimeo.com/video/1063136?title=0&amp;byline=0&amp;portrait=0"
-				width="400" height="225" frameborder="0"></iframe>
-
-			<pre>
-				<code>&lt;iframe src=&quot;http://player.vimeo.com/video/1063136?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;400&quot; height=&quot;225&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</code>
-			</pre>
-		</section>
-
-		<section class="slide" id="digging-deeper">
-			<h2>Digging Deeper</h2>
-			<p>
-				If you want to learn about making your own themes, extending
-				deck.js, and more, check out the<a href="../docs/">documentation</a>.
-			</p>
-		</section>
-
-		<!-- deck.navigation snippet -->
-		<div aria-role="navigation">
-			<a href="#" class="deck-prev-link" title="Previous">&#8592;</a> <a
-				href="#" class="deck-next-link" title="Next">&#8594;</a>
-		</div>
-
-		<!-- deck.status snippet -->
-		<p class="deck-status" aria-role="status">
-			<span class="deck-status-current"></span> / <span
-				class="deck-status-total"></span>
-		</p>
-
-		<!-- deck.goto snippet -->
-		<form action="." method="get" class="goto-form">
-			<label for="goto-slide">Go to slide:</label> <input type="text"
-				name="slidenum" id="goto-slide" list="goto-datalist" />
-			<datalist id="goto-datalist"></datalist>
-			<input type="submit" value="Go" />
-		</form>
-		
 	</ui:define>
 </ui:composition>

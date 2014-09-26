@@ -10,14 +10,35 @@
 	<ui:define name="deckjs">
 
 		<section class="slide">
-			<h1>Acerca</h1>
+			<h1>Acerca de gnextia.com</h1>
 		</section>
 
 		<section class="slide">
 			<h2>Introducción</h2>
-			<p>Se desea acceder a múltiples aplicaciones web con una sola
-				autenticación, a su vez serán administradas por una aplicación
-				central llamada Dashboard.</p>
+			<p>La finalidad del siguiente sistema es cubrir las 3 reglas
+				primordiales</p>
+
+			<ol>
+				<li>
+					<h3>Que funcione</h3>
+					<p>Para que funcione todos los subsistemas web en uno solo, y
+						que se pueda administrar desde un dashboard de solo un acceso
+						“login/logout” nos apoyaremos de SSO y Spring Securirty.</p>
+				</li>
+				<li>
+					<h3>De la mejor manera</h3>
+					<p>Java soporta poderosas herramientas ya liberadas para
+						usarse, entre ellas esta Scala, Groovy y Gradle el cual se
+						encargara de construir todo el proyecto para nuestro querido
+						Jenkis.</p>
+				</li>
+				<li>
+					<h3>No mas allá</h3>
+					<p>Para liberar una versión sera forzoso aprobar todas sus
+						pruebas unitarias y la auditoria de código de Jenkis y Sonar.</p>
+				</li>
+			</ol>
+
 		</section>
 
 		<section class="slide">
@@ -25,15 +46,44 @@
 			<ol>
 				<li>
 					<h3>Java</h3>
-					<p>Sera el lenguaje del sistema</p>
+					<p>Con la maquina virtual de java podremos usar los siguientes
+						lemnguajes Java,Scala y Groovy</p>
 				</li>
 				<li>
-					<h3>Spring</h3>
+					<h3>
+						<a href="http://www.gradle.org">Gradle</a>
+					</h3>
+					<p>Es el constructor de los proyectos</p>
+				</li>
+				<li>
+					<h3>
+						<a href="http://spring.io">Spring</a>
+					</h3>
 					<p>Framework para la plataforma web</p>
 				</li>
 				<li>
-					<h3>CAS</h3>
+					<h3>
+						<a href="https://jasig.org">Jasig CAS</a>
+					</h3>
 					<p>Protocolo para usar SSO</p>
+				</li>
+				<li>
+					<h3>
+						<a href="http://archiva.apache.org">Archiva</a>
+					</h3>
+					<p>Nuestro repositorio de artefactos maven</p>
+				</li>
+				<li>
+					<h3>
+						<a href="http://www.sonarqube.org">Sonar</a>
+					</h3>
+					<p>Para auditar la calidad de nuestro codigo</p>
+				</li>
+				<li>
+					<h3>
+						<a href="http://jenkins-ci.org">Jenkis</a>
+					</h3>
+					<p>Para la integración continua del desarrollo de software</p>
 				</li>
 				<li>
 					<h3>Servidor web</h3>
@@ -41,6 +91,15 @@
 				</li>
 			</ol>
 		</section>
+
+
+		<section class="slide">
+			<h2>Diseño global/</h2>
+			<!-- 			<img src="${request.contextPath}/web/public/img/sso-db.png" /> -->
+			<p></p>
+		</section>
+
+
 
 	</ui:define>
 </ui:composition>
