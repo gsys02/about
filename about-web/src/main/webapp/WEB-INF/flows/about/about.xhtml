@@ -9,54 +9,38 @@
 
 	<ui:define name="deckjs">
 
+		<section class="slide">
+			<h1>Acerca</h1>
+		</section>
 
-		<div class="deck-container">
+		<section class="slide">
+			<h2>Introducción</h2>
+			<p>Se desea acceder a múltiples aplicaciones web con una sola
+				autenticación, a su vez serán administradas por una aplicación
+				central llamada Dashboard.</p>
+		</section>
 
-			<section class="slide">
-				<h1>Acerca</h1>
-			</section>
+		<section class="slide">
+			<h2>Requerimientos:</h2>
+			<ol>
+				<li>
+					<h3>Java</h3>
+					<p>Sera el lenguaje del sistema</p>
+				</li>
+				<li>
+					<h3>Spring</h3>
+					<p>Framework para la plataforma web</p>
+				</li>
+				<li>
+					<h3>CAS</h3>
+					<p>Protocolo para usar SSO</p>
+				</li>
+				<li>
+					<h3>Servidor web</h3>
+					<p>Podemos elegir entre tomcat,glassfish,wildfly, etc.</p>
+				</li>
+			</ol>
+		</section>
 
-			<section class="slide">
-				<h2>Introducción</h2>
-				<p>Se desea acceder a múltiples aplicaciones web con una sola
-					autenticación, a su vez serán administradas por una aplicación
-					central llamada Dashboard.</p>
-			</section>
-
-			<section class="slide">
-				<h2>Requerimientos:</h2>
-				<ol>
-					<li>
-						<h3>Java</h3>
-						<p>Sera el lenguaje del sistema</p>
-					</li>
-					<li>
-						<h3>Spring</h3>
-						<p>Framework para la plataforma web</p>
-					</li>
-					<li>
-						<h3>CAS</h3>
-						<p>Protocolo para usar SSO</p>
-					</li>
-					<li>
-						<h3>Servidor web</h3>
-						<p>Podemos elegir entre tomcat,glassfish,wildfly, etc.</p>
-					</li>
-				</ol>
-			</section>
-
-			<section class="slide">
-				<h2>Diseño global SSO</h2>
-				<img src="${request.contextPath}/web/public/img/sso.png" />
-				<p></p>
-			</section>
-
-			<section class="slide">
-				<h2>Diseño global SSO y acceso a base de datos</h2>
-				<img src="${request.contextPath}/web/public/img/sso.png" />
-				<p></p>
-			</section>
-
-		</div>
 	</ui:define>
 </ui:composition>

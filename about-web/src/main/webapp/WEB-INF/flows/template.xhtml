@@ -5,10 +5,7 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-
 <h:head>
-
-
 
 	<!-- Core and extension CSS files -->
 	<link rel="stylesheet" media="screen"
@@ -37,9 +34,7 @@
 		href="${request.contextPath}/web/public/lib/deckjs/core/print.css" />
 	<script
 		src="${request.contextPath}/web/public/lib/deckjs/modernizr.custom.js"></script>
-
 	<!-- 	<script src="${request.contextPath}/web/public/lib/deckjs/jquery.min.js"></script> -->
-
 	<!-- Deck Core and extensions -->
 	<script
 		src="${request.contextPath}/web/public/lib/deckjs/core/deck.core.js"></script>
@@ -61,7 +56,6 @@
 		});
 	</script>
 
-
 </h:head>
 
 <body>
@@ -82,8 +76,10 @@
 		</h:form>
 	</div>
 
-	<ui:insert name="deckjs" />
-
+	<div class="deck-container">
+		<ui:insert name="deckjs" />
+	</div>
+	
 </body>
 
 </html>
