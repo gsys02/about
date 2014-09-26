@@ -8,14 +8,14 @@
 
 	<view-state id="about" />
 	<view-state id="sso" />
-	<view-state id="gradle" />
+	<view-state id="spring" />
 	<view-state id="jenkis" />
 	<view-state id="git" />
 
 	<global-transitions>
 		<transition on="about" to="about" />
 		<transition on="sso" to="sso" />
-		<transition on="gradle" to="gradle" />
+		<transition on="spring" to="spring" />
 		<transition on="jenkis" to="jenkis" />
 		<transition on="git" to="git" />
 	</global-transitions>
