@@ -9,14 +9,14 @@
 	<view-state id="about" />
 	<view-state id="sso" />
 	<view-state id="spring" />
-	<view-state id="jenkis" />
+	<view-state id="arch" />
 	<view-state id="git" />
 
 	<global-transitions>
 		<transition on="about" to="about" />
 		<transition on="sso" to="sso" />
 		<transition on="spring" to="spring" />
-		<transition on="jenkis" to="jenkis" />
+		<transition on="arch" to="arch" />
 		<transition on="git" to="git" />
 	</global-transitions>
 

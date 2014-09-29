@@ -11,14 +11,16 @@
 	<ui:define name="deckjs">
 
 		<section class="slide">
-			<h1>SSO</h1>
+			<h1>Single Sign On</h1>
 		</section>
 
 		<section class="slide">
 			<h2>Introducción</h2>
 			<p>Se desea acceder a múltiples aplicaciones web con una sola
-				autenticación; a su vez serán administradas por un Dashboard que
-				simulara una sola web para el usuario final.</p>
+				autenticación, a su vez serán administradas por un Dashboard que
+				simulara una sola web para el usuario final.<br/> Las peticiones a base
+				de datos “CRUD y querys” se llevarán a cabo en otro aplicativo web
+				con servicios restful por el puerto 8443 vía localhost.</p>
 		</section>
 
 
@@ -29,10 +31,10 @@
 		</section>
 
 		<section class="slide">
-			<h2>Diseño global SSO y acceso a base de datos</h2>
+			<h2>Diseño global SSO con acceso a base de datos</h2>
 			<img src="${request.contextPath}/web/public/img/sso-db.png" />
 			<p></p>
 		</section>
-		
+
 	</ui:define>
 </ui:composition>
